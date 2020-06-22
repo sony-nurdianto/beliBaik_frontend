@@ -39,7 +39,7 @@ const Home = () => {
                         </div>
                         <div className="single-animation">
                             <h5>mudah dan terpercaya</h5>
-                            <Link to="#" className="btn btn-info">Tentang</Link>
+                            <Link to="/" className="btn btn-info">Tentang</Link>
                         </div>
                     </div>
                 </div>
@@ -75,7 +75,7 @@ const Home = () => {
                                         Beli Baik merupakan platform pembiayaan secarah Syariah Cara bersih , Kenikmatan
                                         Dunia Tanpa Riba , Hidup Berkah Dunia Akhirat
                                         <br/>
-                                        <Link to="#" className="btn btn-info mt-3">Lebih Banyak</Link>
+                                        <Link to="/" className="btn btn-info mt-3">Lebih Banyak</Link>
                                     </p>
                                 </div>
                             </div>
