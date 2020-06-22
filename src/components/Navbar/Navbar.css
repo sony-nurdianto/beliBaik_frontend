@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Varela+Round&display=swap');
+
+strong {
+    color : #000000;
+    font-family: 'Varela Round', sans-serif;
+    
+}
+
+strong:hover {
+    color: #29AB87 !important;
+
+}
+
+
+span:hover {
+    text-shadow: 0px 2px 0px #c4c4c4;
+    
+}
+
+
+.brand1 {
+    color : #ff6f00;
+    font-size: 30px;
+}
+
+
+
+.brand2 {
+    color: #29AB87
+}
+
+.navbar:hover {
+    box-shadow: 2px 2px 50px #2e2b28;
+   
+}
+
+.nav-link {
+    font-size: 20px;
+    
+}
+
+
