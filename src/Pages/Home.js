@@ -6,128 +6,325 @@ import "./Home.css"
 import C1 from "./images/C1.jpg"
 import C2 from "./images/C2.jpg"
 import C3 from "./images/C3.jpg"
-// import old from "./images/old-1130743_1920.jpg"
-// import ScrollReveal from "scrollreveal"
+import B from "./images/google-play-badge.svg"
+
 
 
 const Home = () => {
 
-    // window.sr = ScrollReveal();
-    // ScrollReveal().reveal(document.querySelector(".animate-left"),{
-    //     origin :"left",
-    //     duration : 1000,
-    //     distance : "25rem"
-    // })
+   
 
     return (
         <div>
             <section className="hero" id="hero">
                 <div className="container">
-                    <h2 className="sub-headline">
-                        <span className="first-letter">P</span>injaman Syariah
-                    </h2>
-                    <h1 className="headline">
+                    {/* <h2 className="sub-headline">
+                        <span className="first-letter">P</span>embanding Syariah
+                    </h2> */}
+                    <h1 className="headline animated zoomIn"     
+                            style={{
+                                animationDuration: "2s",
+                                animationDelay: "4.5s"
+                            }}>
                         <strong className="brand">
                             <span className="brand3">B<span className="brand4">e</span>li Baik</span>
                         </strong>
                     </h1>
                     <div className="headline-description">
-                        <div className="separator">
-                            <div className="line line-left"></div>
-                            <div className="asterisk"><FontAwesomeIcon icon={faAsterisk}/></div>
-                            <div className="line line-right"></div>
-                        </div>
                         <div className="single-animation">
-                            <h5>mudah dan terpercaya</h5>
-                            <Link to="/" className="btn btn-info">Tentang</Link>
+                            <h5
+                                className="animated zoomInRight"
+                                style={{
+                                animationDuration: "2s",
+                                animationDelay: "4.5s"
+                            }}>mudah dan terpercaya</h5>
+                        </div>
+                        <div
+                            className="animated zoomInLeft"
+                            style={{
+                            margin: "0",
+                            animationDuration: "2s",
+                            animationDelay: "4.5s"
+                        }}>
+                            <span>
+                                <Link><img
+                                    src={B}
+                                    alt="google"
+                                    style={{
+            width: "10vw",
+            height: "13vh",
+            marginRight: "1rem"
+        }}/></Link>
+                            </span>
+                            {/* <span ><Link to="/" className="btn btn-info" style={{marginLeft:"1rem"}}>Download</Link></span> */}
                         </div>
                     </div>
                 </div>
             </section>
             <section className="discover-our-story">
-                <div className="container">
-                    <div className="beli-info">
-                        <div className="beli-description padding-right animate-left" >
-                            <div className="global-headline">
-                                <h2 className="sub-headline">
-                                    <span className="first-letter">S</span>ekilas Tentang
-                                </h2>
-                                <h1>
-                                    <strong className="brand">
-                                        <span className="brand3">B<span className="brand4">e</span>li Baik</span>
-                                    </strong>
-                                </h1>
-                                {/* <div className="asterisk"><FontAwesomeIcon icon={faAsterisk}/></div> */}
-                            </div>
-                            <div
-                                className="row"
-                                style={{
-                                marginTop: "2rem"
-                            }}>
-                                <div className="col-6">
-                                    <img className="img-story" src={C1} alt="img story"/>
-                                </div>
-                                <div className="col-6 mt-5">
-                                    <p
-                                        style={{
-                                        marginLeft: "1rem"
-                                    }}>
-                                        Beli Baik merupakan platform pembiayaan secarah Syariah Cara bersih , Kenikmatan
-                                        Dunia Tanpa Riba , Hidup Berkah Dunia Akhirat
-                                        <br/>
-                                        <Link to="/" className="btn btn-info mt-3">Lebih Banyak</Link>
-                                    </p>
-                                </div>
-                            </div>
+                <div className="container-fluid">
+                    <div className="row">
+                        <div className="col-6">
+                            <img src={C1} alt="sembarang"/>
+                        </div>
+                        <div className="col-6  global-headline" >
+                            {/* <div className=""> */}
+                            <h5 className="sub-headline shadow-text" ><span >Kenapa Harus Pembiyayan syariah</span></h5>
+                            <h1 className="headline animated zoomIn">
 
-                        </div>
-                        {/* <div className="beli-info-img animate-right">
-                        <img className="img-story" src={C1} alt="img story"/>
-                    </div> */}
-                    </div>
-                </div>
-            </section>
-            <section className="baik-item between">
-                <div className="container">
-                    <div className="beli-description padding-right animate-left">
-                        <div className="global-headline">
-                            <div className="animate-top">
-                                <h2 className="sub-headline1">
-                                    <span className="first-letter">A</span>lasan memakai
-                                </h2>
-                            </div>
-                            <div className="animate-bottom">
-                                <h1>
-                                    <strong className="brand">
-                                        <span className="brand3">B<span className="brand4">e</span>li Baik</span>
-                                    </strong>
-                                </h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section className="beli-bank">
-                <div className="container">
-                    <div className="beli-info">
-                        <div className="image-group padding-right animate-left">
-                            <img src={C1} alt="bank"/>
-                            <img src={C2} alt="bank"/>
-                            <img src={C3} alt="bank"/>
-                            <img src={C3} alt="bank"/>
-                        </div>
-                    </div>
-                    <div className="beli-description animate-right">
-                        <div className="global-headline">
-                            <h2 className="sub-headline">
-                                <span className="first-letter">P</span>artner
-                            </h2>
-                            <h1>
-                                <strong className="brand">
+                                <strong>
                                     <span className="brand3">B<span className="brand4">e</span>li Baik</span>
                                 </strong>
                             </h1>
-                            {/* <div className="asterisk"><FontAwesomeIcon icon={faAsterisk}/></div> */}
+                            {/* </div> */}
+                            <div >
+                                <p >Pembiyayan syariah adalah penyediaan uang atau tagihan yang dipersamakan
+                                    dengan itu berdasarkan persetujuan atau kesepakatan antara bank dengan pihak
+                                    yang dibiyayai</p>
+                                <Link className="btn btn-info">Selengkapnya</Link>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section
+                className="partner-beli"
+                style={{
+                marginTop: "10rem"
+            }}>
+                <div className="container-fluid">
+                    <div >
+                        <h5
+                            className="sub-headline shadow-text"
+                            style={{
+                            textAlign: "center",
+                            fontSize: "10rem",
+                            marginBottom: "5rem"
+                        }}>Partner Kami</h5>
+                    </div>
+                    <div className="container-fluid">
+                        <div className="row mb-5">
+                            <div className="col">
+                                <div
+                                    className="card shadow p-3 mb-5 bg-white rounded"
+                                    style={{
+                                    width: "18rem"
+                                }}>
+                                    <Link to="/" className="btn">
+                                        <div className="card-body ">
+                                            <img src={C2} alt="img"/>
+                                            <h5
+                                                style={{
+                                                textAlign: "center",
+                                                marginBottom: "1rem"
+                                            }}>mandiri</h5>
+                                        </div>
+                                    </Link>
+                                </div>
+                            </div>
+                            <div className="col">
+                                <div
+                                    className="card shadow p-3 mb-5 bg-white rounded"
+                                    style={{
+                                    width: "18rem"
+                                }}>
+                                    <Link to="/" className="btn">
+                                        <div className="card-body">
+                                            <img src={C2} alt="img"/>
+                                            <h5
+                                                style={{
+                                                textAlign: "center",
+                                                marginBottom: "1rem"
+                                            }}>mandiri</h5>
+                                        </div>
+                                    </Link>
+                                </div>
+                            </div>
+                            <div className="col">
+                                <div
+                                    className="card shadow p-3 mb-5 bg-white rounded"
+                                    style={{
+                                    width: "18rem"
+                                }}>
+                                    <Link to="/" className="btn">
+                                        <div className="card-body">
+                                            <img src={C2} alt="img"/>
+                                            <h5
+                                                style={{
+                                                textAlign: "center",
+                                                marginBottom: "1rem"
+                                            }}>mandiri</h5>
+                                        </div>
+                                    </Link>
+                                </div>
+                            </div>
+                            <div className="col">
+                                <div
+                                    className="card shadow p-3 mb-5 bg-white rounded"
+                                    style={{
+                                    width: "18rem"
+                                }}>
+                                    <Link to="/" className="btn">
+                                        <div className="card-body">
+                                            <img src={C2} alt="img"/>
+                                            <h5
+                                                style={{
+                                                textAlign: "center",
+                                                marginBottom: "1rem"
+                                            }}>mandiri</h5>
+                                        </div>
+                                    </Link>
+                                </div>
+                            </div>
+                            <div className="col">
+                                <div
+                                   className="card shadow p-3 mb-5 bg-white rounded"
+                                    style={{
+                                    width: "18rem"
+                                }}>
+                                    <Link to="/" className="btn">
+                                        <div className="card-body">
+                                            <img src={C2} alt="img"/>
+                                            <h5
+                                                style={{
+                                                textAlign: "center",
+                                                marginBottom: "1rem"
+                                            }}>mandiri</h5>
+                                        </div>
+                                    </Link>
+                                </div>
+                            </div>
+                            <div className="col">
+                                <div
+                                    className="card shadow p-3 mb-5 bg-white rounded"
+                                    style={{
+                                    width: "18rem"
+                                }}>
+                                    <Link to="/" className="btn">
+                                        <div className="card-body">
+                                            <img src={C2} alt="img"/>
+                                            <h5
+                                                style={{
+                                                textAlign: "center",
+                                                marginBottom: "1rem"
+                                            }}>mandiri</h5>
+                                        </div>
+                                    </Link>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="container-fluid">
+                        <div className="row mb-5">
+                            <div className="col">
+                                <div
+                                    className="card shadow p-3 mb-5 bg-white rounded"
+                                    style={{
+                                    width: "18rem"
+                                }}>
+                                    <Link to="/" className="btn">
+                                        <div className="card-body">
+                                            <img src={C2} alt="img"/>
+                                            <h5
+                                                style={{
+                                                textAlign: "center",
+                                                marginBottom: "1rem"
+                                            }}>mandiri</h5>
+                                        </div>
+                                    </Link>
+                                </div>
+                            </div>
+                            <div className="col">
+                                <div
+                                    className="card shadow p-3 mb-5 bg-white rounded"
+                                    style={{
+                                    width: "18rem"
+                                }}>
+                                    <Link to="/" className="btn">
+                                        <div className="card-body">
+                                            <img src={C2} alt="img"/>
+                                            <h5
+                                                style={{
+                                                textAlign: "center",
+                                                marginBottom: "1rem"
+                                            }}>mandiri</h5>
+                                        </div>
+                                    </Link>
+                                </div>
+                            </div>
+                            <div className="col">
+                                <div
+                                    className="card shadow p-3 mb-5 bg-white rounded"
+                                    style={{
+                                    width: "18rem"
+                                }}>
+                                    <Link to="/" className="btn">
+                                        <div className="card-body">
+                                            <img src={C2} alt="img"/>
+                                            <h5
+                                                style={{
+                                                textAlign: "center",
+                                                marginBottom: "1rem"
+                                            }}>mandiri</h5>
+                                        </div>
+                                    </Link>
+                                </div>
+                            </div>
+                            <div className="col">
+                                <div
+                                    className="card shadow p-3 mb-5 bg-white rounded"
+                                    style={{
+                                    width: "18rem"
+                                }}>
+                                    <Link to="/" className="btn">
+                                        <div className="card-body">
+                                            <img src={C2} alt="img"/>
+                                            <h5
+                                                style={{
+                                                textAlign: "center",
+                                                marginBottom: "1rem"
+                                            }}>mandiri</h5>
+                                        </div>
+                                    </Link>
+                                </div>
+                            </div>
+                            <div className="col">
+                                <div
+                                    className="card shadow p-3 mb-5 bg-white rounded"
+                                    style={{
+                                    width: "18rem"
+                                }}>
+                                    <Link to="/" className="btn">
+                                        <div className="card-body">
+                                            <img src={C2} alt="img"/>
+                                            <h5
+                                                style={{
+                                                textAlign: "center",
+                                                marginBottom: "1rem"
+                                            }}>mandiri</h5>
+                                        </div>
+                                    </Link>
+                                </div>
+                            </div>
+                            <div className="col">
+
+                                <div
+                                   className="card shadow p-3 mb-5 bg-white rounded"
+                                    style={{
+                                    width: "18rem"
+                                }}>
+                                    <Link to="/" className="btn">
+                                        <div className="card-body">
+                                            <img src={C2} alt="img"/>
+                                            <h5
+                                                style={{
+                                                textAlign: "center",
+                                                marginBottom: "1rem"
+                                            }}>mandiri</h5>
+                                        </div>
+                                    </Link>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

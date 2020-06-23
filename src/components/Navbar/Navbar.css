@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Varela+Round&display=swap');
 
 strong {
-    color : #000000;
+    color : #405472;
     font-family: 'Varela Round', sans-serif;
     
 }
@@ -12,7 +12,7 @@ strong:hover {
 }
 
 
-span:hover {
+.span:hover {
     text-shadow: 0px 2px 0px #c4c4c4;
     
 }
