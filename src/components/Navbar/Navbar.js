@@ -15,10 +15,10 @@ const navbar = () => {
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="mr-auto">
                     <Link className="nav-link" to="/"><strong>Tentang</strong></Link>
-                    {/* <Nav.Link to="/"><strong>Tentang</strong></Nav.Link>
-                    <Nav.Link to="/"><strong>Fitur & Bank Pilihan</strong></Nav.Link>
-                    <Nav.Link to="/"><strong>Testimoni</strong></Nav.Link>
-                    <Nav.Link to="/"><strong>Kontak</strong></Nav.Link> */}
+                    <Link className="nav-link" to="/"><strong>Tentang</strong></Link>
+                    <Link className="nav-link" to="/"><strong>Fitur & Bank Pilihan</strong></Link>
+                    <Link className="nav-link" to="/"><strong>Testimoni</strong></Link>
+                    <Link className="nav-link" to="/"><strong>Kontak</strong></Link>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
