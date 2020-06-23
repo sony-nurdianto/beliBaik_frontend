@@ -1,4 +1,4 @@
-import React, {useState} from "react"
+import React from "react"
 import {Link} from "react-router-dom"
 import {faAsterisk} from "@fortawesome/free-solid-svg-icons"
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
@@ -6,7 +6,7 @@ import "./Home.css"
 import C1 from "./images/C1.jpg"
 import C2 from "./images/C2.jpg"
 import C3 from "./images/C3.jpg"
-import old from "./images/old-1130743_1920.jpg"
+// import old from "./images/old-1130743_1920.jpg"
 // import ScrollReveal from "scrollreveal"
 
 
