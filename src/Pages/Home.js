@@ -1,11 +1,15 @@
-import React, {useEffect} from "react"
+import React, {useState, useEffect} from "react"
 import {Link} from "react-router-dom"
 import Aos from "aos"
+import Slider from "react-slick"
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import "aos/dist/aos.css"
 import "./Home.css"
 import C1 from "./images/C1.jpg"
-import C2 from "./images/C2.jpg"
+import C2 from "./images/Bank_icon.png"
 import B from "./images/google-play-badge.svg"
+import {useAccordionToggle} from "react-bootstrap"
 
 const Home = () => {
 
@@ -14,6 +18,41 @@ const Home = () => {
 
     }, [])
 
+    var settings = {
+        dots: true,
+        infinite: false,
+        speed: 500,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        initialSlide: 0,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              infinite: true,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              initialSlide: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
+      }
+    
     return (
         <div>
             <section className="hero" id="hero">
@@ -57,191 +96,130 @@ const Home = () => {
             <section className="discover-our-story">
                 <div className="flix d-lg-flex ">
                     {/* <div className=" "> */}
-                    <div data-aos="fade-right">
+                    <div data-aos="fade-right" data-aos-anchor-placement="top-center">
                         <img className="img1" src={C1} alt="sembarang"/>
                     </div>
-                    <div data-aos="fade-left">
-                        <h5 className="sub-headline shadow-text">
-                            <span >Kenapa Harus Pembiyayan syariah</span>
-                        </h5>
-                        <h1 >
-                            <strong>
+                    <div data-aos="fade-left" data-aos-anchor-placement="top-center">
+                        <h5 className="sub-headline ">
+                            <span >Kenapa Harus Pembiayaan syariah dan Beli Baik ?</span>
+                            {/* <strong>
                                 <span className="brand5">B<span className="brand6">e</span>li Baik</span>
-                            </strong>
-                        </h1>
+                            </strong> */}
+                        </h5>
+                        {/* <h1 >
+
+                        </h1> */}
                         <div >
-                            <p >Pembiyayan syariah adalah penyediaan uang atau tagihan yang dipersamakan
-                                dengan itu berdasarkan persetujuan atau kesepakatan antara bank dengan pihak
-                                yang dibiyayai</p>
+                            <p className="pbrand">Pembiyayan syariah adalah penyediaan uang atau tagihan
+                                yang dipersamakan dengan itu berdasarkan persetujuan atau kesepakatan antara
+                                bank dengan pihak yang dibiyayai</p>
                             <Link to="/" className="btn btn-info">Selengkapnya</Link>
                         </div>
                     </div>
 
-                </div>
-                {/* </div> */}
-            </section>
-            <section
-                className="partner-beli"
-                style={{
-                marginTop: "10rem"
-            }}>
-                <div className="container-fluid">
-                    <div data-aos="fade-down-left" data-aos-anchor-placement="top-center">
-                        <h5 className="sub-headline1 shadow-text">Partner Kami</h5>
-                    </div>
-                    <div
-                        className="container-fluid"
-                        data-aos="fade-right"
-                        data-aos-anchor-placement="top-center">
-                        <div className="row mb-5">
-                            <div className="col-2">
-                                <div className="card shadow p-3 mb-5 bg-white rounded">
-                                    <Link to="/" className="btn">
-                                        <div className="card-body ">
-                                        <img className="name" src={C2} alt="img"/>
-                                            <h5>mandiri</h5>
-                                        </div>
-                                    </Link>
-                                </div>
-                            </div>
-                            <div className="col-2">
-                                <div
-                                    className="card shadow p-3 mb-5 bg-white rounded">
-                                    <Link to="/" className="btn">
-                                        <div className="card-body">
-                                            <img className="name" src={C2} alt="img"/>
-                                            <h5>mandiri</h5>
-                                        </div>
-                                    </Link>
-                                </div>
-                            </div>
-                            <div className="col-2">
-                                <div
-                                    className="card shadow p-3 mb-5 bg-white rounded">
-                                    <Link to="/" className="btn">
-                                        <div className="card-body">
-                                            <img className="name" src={C2} alt="img"/>
-                                            <h5>mandiri</h5>
-                                        </div>
-                                    </Link>
-                                </div>
-                            </div>
-                            <div className="col-2">
-                                <div
-                                    className="card shadow p-3 mb-5 bg-white rounded">
-                                    <Link to="/" className="btn">
-                                        <div className="card-body">
-                                            <img className="name" src={C2} alt="img"/>
-                                            <h5>mandiri</h5>
-                                        </div>
-                                    </Link>
-                                </div>
-                            </div>
-                            <div className="col-2">
-                                <div
-                                    className="card shadow p-3 mb-5 bg-white rounded">
-                                    <Link to="/" className="btn">
-                                        <div className="card-body">
-                                        <img className="name" src={C2} alt="img"/>
-                                        <h5>mandiri</h5>
-                                        </div>
-                                    </Link>
-                                </div>
-                            </div>
-                            <div className="col-2">
-                                <div
-                                    className="card shadow p-3 mb-5 bg-white rounded">
-                                    <Link to="/" className="btn">
-                                        <div className="card-body">
-                                            <img className="name" src={C2} alt="img"/>
-                                            <h5>mandiri</h5>
-                                        </div>
-                                    </Link>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div
-                        className="container-fluid"
-                        data-aos="fade-left"
-                        data-aos-anchor-placement="top-botom">
-                        <div className="row mb-5">
-                        <div className="col">
-                                <div
-                                    className="card shadow p-3 mb-5 bg-white rounded">
-                                    <Link to="/" className="btn">
-                                        <div className="card-body">
-                                            <img className="name" src={C2} alt="img"/>
-                                            <h5>mandiri</h5>
-                                        </div>
-                                    </Link>
-                                </div>
-                            </div>
-                            <div className="col">
-                                <div
-                                    className="card shadow p-3 mb-5 bg-white rounded">
-                                    <Link to="/" className="btn">
-                                        <div className="card-body">
-                                            <img className="name" src={C2} alt="img"/>
-                                            <h5>mandiri</h5>
-                                        </div>
-                                    </Link>
-                                </div>
-                            </div>
-                            <div className="col">
-                                <div
-                                    className="card shadow p-3 mb-5 bg-white rounded">
-                                    <Link to="/" className="btn">
-                                        <div className="card-body">
-                                            <img className="name" src={C2} alt="img"/>
-                                            <h5>mandiri</h5>
-                                        </div>
-                                    </Link>
-                                </div>
-                            </div>
-                            <div className="col">
-                                <div
-                                    className="card shadow p-3 mb-5 bg-white rounded">
-                                    <Link to="/" className="btn">
-                                        <div className="card-body">
-                                            <img className="name" src={C2} alt="img"/>
-                                            <h5>mandiri</h5>
-                                        </div>
-                                    </Link>
-                                </div>
-                            </div>
-                            <div className="col">
-                                <div
-                                    className="card shadow p-3 mb-5 bg-white rounded">
-                                    <Link to="/" className="btn">
-                                        <div className="card-body">
-                                            <img className="name" src={C2} alt="img"/>
-                                            <h5>mandiri</h5>
-                                        </div>
-                                    </Link>
-                                </div>
-                            </div>
-                            <div className="col">
-                                <div
-                                    className="card shadow p-3 mb-5 bg-white rounded">
-                                    <Link to="/" className="btn">
-                                        <div className="card-body">
-                                            <img className="name" src={C2} alt="img"/>
-                                            <h5>mandiri</h5>
-                                        </div>
-                                    </Link>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    {/* </div> */}
                 </div>
             </section>
             <section >
-                <div style={{
-                    background: "black"
-                }}>
-                    halo
-                </div>
+                <span >
+                    <h1 className="fitur-name">Bank Pilihan</h1>
+                </span>
+                
+                    {/* <div className="d-lg-flex justify-content-around flex-row mb-5"> */}
+                        <Slider {...settings} >
+                        <div
+                            className="card shadow"
+                            style={{
+                            width: '18rem'
+                        }}>
+                            <img className="card-img-top" src={C2} alt="Card image cap"/>
+                            <div className="card-body">
+                                <p className="card-text">BCA</p>
+                            </div>
+                        </div>
+                        <div
+                            className="card shadow"
+                            style={{
+                            width: '18rem'
+                        }}>
+                            <img className="card-img-top" src={C2} alt="Card image cap"/>
+                            <div className="card-body">
+                                <p className="card-text">Bni</p>
+                            </div>
+                        </div>
+                        <div
+                            className="card shadow"
+                            style={{
+                            width: '18rem'
+                        }}>
+                            <img className="card-img-top" src={C2} alt="Card image cap"/>
+                            <div className="card-body">
+                                <p className="card-text">Mandiri</p>
+                            </div>
+                        </div>
+                        <div
+                            className="card shadow"
+                            style={{
+                            width: '18rem'
+                        }}>
+                            <img className="card-img-top" src={C2} alt="Card image cap"/>
+                            <div className="card-body">
+                                <p className="card-text">Mandiri</p>
+                            </div>
+                        </div>
+                        <div
+                            className="card shadow"
+                            style={{
+                            width: '18rem'
+                        }}>
+                            <img className="card-img-top" src={C2} alt="Card image cap"/>
+                            <div className="card-body">
+                                <p className="card-text">Mandiri</p>
+                            </div>
+                        </div>
+                        <div
+                            className="card shadow"
+                            style={{
+                            width: '18rem'
+                        }}>
+                            <img className="card-img-top" src={C2} alt="Card image cap"/>
+                            <div className="card-body">
+                                <p className="card-text">Mandiri</p>
+                            </div>
+                        </div>
+                        <div
+                            className="card shadow"
+                            style={{
+                            width: '18rem'
+                        }}>
+                            <img className="card-img-top" src={C2} alt="Card image cap"/>
+                            <div className="card-body">
+                                <p className="card-text">Mandiri</p>
+                            </div>
+                        </div>
+                        <div
+                            className="card shadow"
+                            style={{
+                            width: '18rem'
+                        }}>
+                            <img className="card-img-top" src={C2} alt="Card image cap"/>
+                            <div className="card-body">
+                                <p className="card-text">Mandiri</p>
+                            </div>
+                        </div>
+                        <div
+                            className="card shadow"
+                            style={{
+                            width: '18rem'
+                        }}>
+                            <img className="card-img-top" src={C2} alt="Card image cap"/>
+                            <div className="card-body">
+                                <p className="card-text">Mandiri</p>
+                            </div>
+                        </div>
+                        </Slider>
+                    {/* </div> */}
+                
             </section>
         </div>
     )
@@ -249,3 +227,57 @@ const Home = () => {
 }
 
 export default Home
+
+{/* <div className="d-lg-flex justify-content-around flex-row mb-5">
+<div
+        className="card shadow"
+        style={{
+        width: '18rem'
+    }}>
+        <img className="card-img-top" src={C2} alt="Card image cap"/>
+        <div className="card-body">
+            <p className="card-text">BCA</p>
+        </div>
+    </div>
+    <div
+        className="card shadow"
+        style={{
+        width: '18rem'
+    }}>
+        <img className="card-img-top" src={C2} alt="Card image cap"/>
+        <div className="card-body">
+            <p className="card-text">Bni</p>
+        </div>
+    </div>
+    <div
+        className="card shadow"
+        style={{
+        width: '18rem'
+    }}>
+        <img className="card-img-top" src={C2} alt="Card image cap"/>
+        <div className="card-body">
+            <p className="card-text">Mandiri</p>
+        </div>
+    </div>
+    <div
+        className="card shadow"
+        style={{
+        width: '18rem'
+    }}>
+        <img className="card-img-top" src={C2} alt="Card image cap"/>
+        <div className="card-body">
+            <p className="card-text">Mandiri</p>
+        </div>
+    </div>
+    <div
+        className="card shadow"
+        style={{
+        width: '18rem'
+    }}>
+        <img className="card-img-top" src={C2} alt="Card image cap"/>
+        <div className="card-body">
+            <p className="card-text">Mandiri</p>
+        </div>
+    </div>
+</div> */
+}

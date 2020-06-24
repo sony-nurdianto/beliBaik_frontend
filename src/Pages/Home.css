@@ -1,5 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@1,500&family=Herr+Von+Muellerhoff&family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@700&display=swap');
 
 
 /* img {
@@ -23,7 +24,7 @@
    animation-duration: 1s;
 }
 
-@media screen  and (max-width : 600px){
+/* @media screen  and (max-width : 600px){
     .hero{
         width: 100%;
         max-width: 100%;
@@ -38,7 +39,7 @@
        animation: slideInLeft;
        animation-duration: 1s;
     }
-}
+} */
 .google-btn{
     width: 600px;
     height: 5rem;
@@ -71,6 +72,13 @@
 }
 
 
+.sub-headline{
+    font-size: 3vw;
+    font-weight: 1000;
+    font-family: 'Source Sans Pro', sans-serif;
+    color : #405472 ;
+    line-height: -1;
+}
 
 
 @media screen and (max-width: 600px) {
@@ -78,20 +86,12 @@
         font-size: 1.5rem;
         font-weight: 1000;
         font-family: 'Source Sans Pro', sans-serif;
-        color : #3c8312 ;
+        color : #405472 ;
         line-height: -1;
     }
   }
 
-@media screen and (min-width:601px){
-    .sub-headline{
-        font-size: 4.3rem;
-        font-weight: 1000;
-        font-family: 'Source Sans Pro', sans-serif;
-        color : #3c8312 ;
-        line-height: -1;
-    }
-}
+
 
 
 
@@ -111,9 +111,9 @@
 
 
 .headline{
-    color : #ff6f00;
-    font-size: 3.7rem;
-    font-family: 'Source Sans Pro', sans-serif;
+    /* color : #ff6f00; */
+    /* font-size: 3.7rem; */
+    /* font-family: 'Baloo Thambi 2', cursive; */
 }
 
 
@@ -122,8 +122,10 @@
     color : #ff6f00;
     font-size: 6rem;
     font-weight: 900;
-    
+    font-family: 'Baloo Thambi 2', cursive;
 }
+
+
 
 @media screen and (max-width : 600px){
     .brand3 {
@@ -139,8 +141,9 @@
 }
 .brand5 {
     color : #ff6f00;
-    font-size: 6rem;
+    font-size: 3vw;
     font-weight: 900;
+    /* font-family: 'Baloo Thambi 2', cursive; */
     
 }
 
@@ -149,6 +152,7 @@
         color : #ff6f00 !important;
         font-size: 2rem !important;
         font-weight: 900 !important;
+        /* font-family: 'Baloo Thambi 2', cursive; */
         
     }
 }
@@ -217,7 +221,7 @@
 }
 
 .headline-description h5{
-    color : #3c8312;
+    color : #405472;
     font-size: 3rem;
     font-weight: 1000;
     text-transform: uppercase;
@@ -229,7 +233,7 @@
 }
 @media screen and (max-width : 600px){
     .headline-description h5{
-        color : #3c8312;
+        color : #405472;
         font-size: 1.5rem;
         font-weight: 1000;
         text-transform: uppercase;
@@ -366,29 +370,31 @@ p{
     background-color:red !important;
 }
 
+/* .sub-headline1{
+    text-align: center;
+    font-size: 7vw;
+    font-weight: 1000;
+    font-family: 'Source Sans Pro', sans-serif;
+    color : #3c8312 ;
+    line-height: -1;
+    margin-bottom: 5rem;
+}
+
+
 @media screen and (max-width: 600px) {
     .sub-headline1{
         text-align: center;
-        font-size: 3rem;
+        font-size: 3vw;
         font-weight: 1000;
         font-family: 'Source Sans Pro', sans-serif;
         color : #3c8312 ;
         line-height: -1;
         margin-bottom: 2.5rem;
     }
-  }
+  } */
 
-@media screen and (min-width:600px){
-    .sub-headline1{
-        text-align: center;
-        font-size: 7rem;
-        font-weight: 1000;
-        font-family: 'Source Sans Pro', sans-serif;
-        color : #3c8312 ;
-        line-height: -1;
-        margin-bottom: 5rem;
-    }
-}
+
+
 
 .baik-item {
     background-image: url('./images/pngTree.jpg');
@@ -439,28 +445,34 @@ p{
 }
 
 .img1{
-    width: 59rem;
+    width: 50vw;
     margin-right : 5rem
 }
 @media screen and (max-width : 600px){
     .img1 {
          
-         /* width: 100%; */
+         width: 100%;
          align-self: center;
          width: 15rem;
          margin: 1rem -1rem 0 ;
-         
-         /* max-width : 10rem; */
-         /* max-height: 10rem; */
-         /* margin-left : -1rem */
+         max-width : 10rem;
+         max-height: 10rem;
+         margin-left : -1rem;
+         margin-bottom : 2rem   
     }
 } 
+
+.flix{
+    margin-top: 15rem
+}
 
 @media screen and (max-width : 600px){
     .flix {
          
         display: flex;
-        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
     }
 } 
 
@@ -473,4 +485,29 @@ p{
     .card-body h5{
         font-size: 10px;
     }   
+}
+
+.fitur{
+    
+}
+
+.fitur-name {
+    color : #405472;
+    font-size: 5rem;
+    font-weight: 1000;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+    margin-top: 12rem;
+    margin-bottom: 5rem ;
+}
+
+@media screen and (max-width : 600px){
+    .fitur-name {
+        color : #3c8312;
+        font-size: 3rem;
+        font-weight: 1000;
+        font-family: 'Source Sans Pro', sans-serif;
+        text-align: center;
+        
+    }
 }
