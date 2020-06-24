@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from './components/Navbar/Navbar.js'
 import Home from './Pages/Home'
+import "animate.css"
 import {HashRouter  as Router, Switch, Route} from 'react-router-dom'
 // import "./style.css"
 

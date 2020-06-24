@@ -9,7 +9,7 @@ const navbar = () => {
 
     return (
  
-        <Navbar className="animated fadeIn" style={{animationDuration: "2s",animationDelay:"1s"}} collapseOnSelect expand="lg" bg="light" variant="light" sticky="top">
+        <Navbar className="animate__animated animate__fadeIn" style={{animationDuration: "2s",animationDelay:"1s"}} collapseOnSelect expand="lg" bg="light" variant="light" sticky="top">
             <Navbar.Brand href="#home"><strong className="span"><span className="brand1">B<span className="brand2">e</span>li Baik</span></strong></Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
             <Navbar.Collapse id="responsive-navbar-nav">
@@ -24,5 +24,8 @@ const navbar = () => {
     )
 
 }
+
+
+
 
 export default navbar
