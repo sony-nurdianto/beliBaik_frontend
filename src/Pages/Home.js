@@ -102,7 +102,7 @@ const Home = () => {
                     ]}
                         
                 > */}
-                    <div
+                    {/* <div
                         className="card shadow"
                         style={{
                         width: '18rem'
@@ -191,7 +191,7 @@ const Home = () => {
                         <div className="card-body">
                             <p className="card-text">Mandiri</p>
                         </div>
-                    </div>
+                    </div> */}
                 {/* </Slider> */}
 
             </section>
@@ -202,56 +202,3 @@ const Home = () => {
 
 export default Home
 
-{/* <div className="d-lg-flex justify-content-around flex-row mb-5">
-<div
-        className="card shadow"
-        style={{
-        width: '18rem'
-    }}>
-        <img className="card-img-top" src={C2} alt="Card image cap"/>
-        <div className="card-body">
-            <p className="card-text">BCA</p>
-        </div>
-    </div>
-    <div
-        className="card shadow"
-        style={{
-        width: '18rem'
-    }}>
-        <img className="card-img-top" src={C2} alt="Card image cap"/>
-        <div className="card-body">
-            <p className="card-text">Bni</p>
-        </div>
-    </div>
-    <div
-        className="card shadow"
-        style={{
-        width: '18rem'
-    }}>
-        <img className="card-img-top" src={C2} alt="Card image cap"/>
-        <div className="card-body">
-            <p className="card-text">Mandiri</p>
-        </div>
-    </div>
-    <div
-        className="card shadow"
-        style={{
-        width: '18rem'
-    }}>
-        <img className="card-img-top" src={C2} alt="Card image cap"/>
-        <div className="card-body">
-            <p className="card-text">Mandiri</p>
-        </div>
-    </div>
-    <div
-        className="card shadow"
-        style={{
-        width: '18rem'
-    }}>
-        <img className="card-img-top" src={C2} alt="Card image cap"/>
-        <div className="card-body">
-            <p className="card-text">Mandiri</p>
-        </div>
-    </div>
-</div> */
-}
