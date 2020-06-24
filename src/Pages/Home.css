@@ -1,6 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@1,500&family=Herr+Von+Muellerhoff&family=Source+Sans+Pro&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@700&display=swap'); */
 
 
 /* img {
@@ -122,7 +122,7 @@
     color : #ff6f00;
     font-size: 6rem;
     font-weight: 900;
-    font-family: 'Baloo Thambi 2', cursive;
+    /* font-family: 'Baloo Thambi 2', cursive; */
 }
 
 

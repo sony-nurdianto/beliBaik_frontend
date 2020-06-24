@@ -4,7 +4,7 @@ import Aos from "aos"
 import "aos/dist/aos.css"
 import "./Home.css"
 import C1 from "./images/C1.jpg"
-import C2 from "./images/Bank_icon.png"
+// import C2 from "./images/Bank_icon.png"
 import B from "./images/google-play-badge.svg"
 
 const Home = () => {
@@ -86,113 +86,7 @@ const Home = () => {
                     <h1 className="fitur-name">Bank Pilihan</h1>
                 </span>
 
-                {/* <Slider 
-
-                    dots={true}
-                    infinite={false}
-                    speed={500}
-                    slidesToShow={4}
-                    slidesToScroll={4}
-                    initialSlide={0}
-                    responsive ={[
-                        {
-                            breakpoint : 1024,
-                            settings : {slidesToShow : 3 , slidesToScroll : 3 ,infinite : true , dots : true}
-                        }
-                    ]}
-                        
-                > */}
-                    {/* <div
-                        className="card shadow"
-                        style={{
-                        width: '18rem'
-                    }}>
-                        <img className="card-img-top" src={C2} alt="Card image cap"/>
-                        <div className="card-body">
-                            <p className="card-text">BCA</p>
-                        </div>
-                    </div>
-                    <div
-                        className="card shadow"
-                        style={{
-                        width: '18rem'
-                    }}>
-                        <img className="card-img-top" src={C2} alt="Card image cap"/>
-                        <div className="card-body">
-                            <p className="card-text">Bni</p>
-                        </div>
-                    </div>
-                    <div
-                        className="card shadow"
-                        style={{
-                        width: '18rem'
-                    }}>
-                        <img className="card-img-top" src={C2} alt="Card image cap"/>
-                        <div className="card-body">
-                            <p className="card-text">Mandiri</p>
-                        </div>
-                    </div>
-                    <div
-                        className="card shadow"
-                        style={{
-                        width: '18rem'
-                    }}>
-                        <img className="card-img-top" src={C2} alt="Card image cap"/>
-                        <div className="card-body">
-                            <p className="card-text">Mandiri</p>
-                        </div>
-                    </div>
-                    <div
-                        className="card shadow"
-                        style={{
-                        width: '18rem'
-                    }}>
-                        <img className="card-img-top" src={C2} alt="Card image cap"/>
-                        <div className="card-body">
-                            <p className="card-text">Mandiri</p>
-                        </div>
-                    </div>
-                    <div
-                        className="card shadow"
-                        style={{
-                        width: '18rem'
-                    }}>
-                        <img className="card-img-top" src={C2} alt="Card image cap"/>
-                        <div className="card-body">
-                            <p className="card-text">Mandiri</p>
-                        </div>
-                    </div>
-                    <div
-                        className="card shadow"
-                        style={{
-                        width: '18rem'
-                    }}>
-                        <img className="card-img-top" src={C2} alt="Card image cap"/>
-                        <div className="card-body">
-                            <p className="card-text">Mandiri</p>
-                        </div>
-                    </div>
-                    <div
-                        className="card shadow"
-                        style={{
-                        width: '18rem'
-                    }}>
-                        <img className="card-img-top" src={C2} alt="Card image cap"/>
-                        <div className="card-body">
-                            <p className="card-text">Mandiri</p>
-                        </div>
-                    </div>
-                    <div
-                        className="card shadow"
-                        style={{
-                        width: '18rem'
-                    }}>
-                        <img className="card-img-top" src={C2} alt="Card image cap"/>
-                        <div className="card-body">
-                            <p className="card-text">Mandiri</p>
-                        </div>
-                    </div> */}
-                {/* </Slider> */}
+                
 
             </section>
         </div>
