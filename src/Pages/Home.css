@@ -110,11 +110,11 @@
 
 
 
-.headline{
+/* .headline{ */
     /* color : #ff6f00; */
     /* font-size: 3.7rem; */
     /* font-family: 'Baloo Thambi 2', cursive; */
-}
+/* } */
 
 
 
@@ -487,9 +487,6 @@ p{
     }   
 }
 
-.fitur{
-    
-}
 
 .fitur-name {
     color : #405472;
