@@ -230,10 +230,7 @@ const Home = () => {
                                 id="exampleInputEmail1"
                                 aria-describedby="emailHelp"
                                 placeholder="Enter email"
-                                style={{
-                                border: "none",
-                                borderBottom: "1px solid black"
-                            }}/>
+                             />
                             <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small>
                         </div>
                         <div className="form-group">
@@ -243,10 +240,8 @@ const Home = () => {
                                 className="form-control"
                                 id="exampleInputPassword1"
                                 placeholder="Password"
-                                style={{
-                                border: "none",
-                                borderBottom: "1px solid black"
-                            }}/>
+                                
+                            />
                         </div>
                         <div className="form-group">
                             <label htmlFor="exampleInputPassword1">masukan</label>
