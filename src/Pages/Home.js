@@ -23,8 +23,7 @@ const Home = () => {
             centeredSlides: true,
             slidesPerView: 'auto',
             //   coverflowEffect: {     rotate: 50,     stretch: 10,     depth: 100,
-            // modifier: 1,     slideShadows: false,   },
-
+            // modifier: 1,     slideShadows: false,   }, direction : "vertical",
             spaceBetween: 10,
             // init: false,
             pagination: {
@@ -55,32 +54,25 @@ const Home = () => {
 
     return (
         <div>
-            <section className="animate__animated animate__backInDown ">
+            <section className="animate__animated animate__backInDown">
                 <div className="landing ">
 
-                    <div >
-                        <img
-                            src={B2}
-                            alt="animasi background"
-                            style={{
-                            width: "100%",
-                            height: "100vh"
-                            
-                        }} />
+                    <div className="div-img">
+                        <img src={B2} alt="animasi background" className="img-first"/>
                     </div>
                     <div className="centering">
-
                         <div className="title">
                             <h1
                                 className="headline "
-                               >
+                                data-aos="fade-up"
+                                data-aos-anchor-placement="top-center">
                                 <strong className="brand">
                                     <span className="brand3">B<span className="brand4">e</span>li Baik</span>
                                 </strong>
                             </h1>
                         </div>
                         <div className="description">
-                            <p className="p1">
+                            <p className="p1" data-aos="fade-up" >
                                 Beli baik merupakan platform Pembiyayan secara syariah Cara Bersih , Kenikmatan
                                 Tanpa Riba, Hidup Bersih Dunia Akhirat
                             </p>
@@ -91,7 +83,11 @@ const Home = () => {
                             margin: "0"
                         }}>
                             <span className="center">
-                                <Link to="/"><img className="google-btn" src={B} alt="google"/></Link>
+                                <Link to="/"><img
+                                    className="google-btn"
+                                    src={B}
+                                    alt="google"
+                                    /></Link>
                             </span>
                         </div>
                     </div>
@@ -108,24 +104,24 @@ const Home = () => {
                         alt="sembarang"
                         data-aos="fade-left"
                         data-aos-anchor-placement="top-center"/> {/* </div> */}
-                    <span
-                        data-aos="fade-right"
-                        data-aos-anchor-placement="top-center"
-                        className="container align-self-center">
-                        <h5 className="sub-headline ">
+                    <span className="container align-self-center">
+                        <h5
+                            className="sub-headline "
+                            data-aos="fade-down-right"
+                            data-aos-anchor-placement="top-center">
                             Kenapa Harus Pembiayaan syariah dan Beli Baik ?
                         </h5>
 
-                        <p className="p2">Pembiyayan syariah adalah penyediaan uang atau tagihan yang
-                            dipersamakan dengan itu berdasarkan persetujuan atau kesepakatan antara bank
-                            dengan pihak yang dibiyayai</p>
+                        <p className="p2" data-aos="fade-down-right">Pembiyayan syariah adalah
+                            penyediaan uang atau tagihan yang dipersamakan dengan itu berdasarkan
+                            persetujuan atau kesepakatan antara bank dengan pihak yang dibiyayai</p>
                         <div
                             className="container"
                             style={{
                             padding: "0"
                         }}>
                             <div className="center">
-                                <Link to="/" className="btn btn-info">Selengkapnya</Link>
+                                <Link to="/" className="btn btn-info" data-aos="fade-down-right">Selengkapnya</Link>
                             </div>
                         </div>
                     </span>
@@ -133,9 +129,47 @@ const Home = () => {
                     {/* </div> */}
                 </div>
             </section>
+            <section>
+                <div className="manfaat">
+                    <div className="manfaat-isi">
+                        <h1 data-aos="fade-down-right">manfaat pinjaman syariah beli baik</h1>
+                    </div>
+                    <div className="container manfaat-card">
+                        <div className="content-card" data-aos="flip-left">
+                            <i/>
+                            <h4>aman</h4>
+                            <p>Bagian standar dari teks Lorem Ipsum yang digunakan sejak tahun 1500an kini
+                                di reproduksi kembali di bawah ini untuk mereka yang tertarik. Bagian 1.10.32
+                                dan 1.10.33 dari "de Finibus Bonorum et Malorum" karya Cicero juga di reproduksi
+                                persis seperti bentuk aslinya, diikuti oleh versi bahasa Inggris yang berasal
+                                dari terjemahan tahun 1914 oleh H. Rackham.</p>
+                        </div>
+                        <div className="content-card" data-aos="flip-right">
+                            <i/>
+                            <h4>terjangkau</h4>
+                            <p>Bagian standar dari teks Lorem Ipsum yang digunakan sejak tahun 1500an kini
+                                di reproduksi kembali di bawah ini untuk mereka yang tertarik. Bagian 1.10.32
+                                dan 1.10.33 dari "de Finibus Bonorum et Malorum" karya Cicero juga di reproduksi
+                                persis seperti bentuk aslinya, diikuti oleh versi bahasa Inggris yang berasal
+                                dari terjemahan tahun 1914 oleh H. Rackham.</p>
+                        </div>
+                        <div className="content-card" data-aos="flip-up">
+                            <i/>
+                            <h4>terpercaya</h4>
+                            <p>Bagian standar dari teks Lorem Ipsum yang digunakan sejak tahun 1500an kini
+                                di reproduksi kembali di bawah ini untuk mereka yang tertarik. Bagian 1.10.32
+                                dan 1.10.33 dari "de Finibus Bonorum et Malorum" karya Cicero juga di reproduksi
+                                persis seperti bentuk aslinya, diikuti oleh versi bahasa Inggris yang berasal
+                                dari terjemahan tahun 1914 oleh H. Rackham.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
             <section >
                 <span >
-                    <h1 className="fitur-name">Bank Pilihan</h1>
+                    <h1 className="fitur-name " data-aos="fade-down">Bank Pilihan</h1>
                 </span>
 
                 <div
@@ -179,6 +213,84 @@ const Home = () => {
 
                     <div className="swiper-pagination"></div>
                 </div>
+            </section>
+            <section>
+                <div className="container masukan">
+                    <h1 style={{
+                        textAlign: "center"
+                    }} data-aos="zoom-in-left" data-aos-anchor-placement="top-center">Masukan anda motivasi untuk kami</h1>
+                </div>
+                <form className="masukan-form" data-aos="zoom-in-right"data-aos-anchor-placement="top-center">
+                    <div className="container">
+                        <div className="form-group">
+                            <label htmlFor="exampleInputEmail1">nama</label>
+                            <input
+                                type="email"
+                                className="form-control"
+                                id="exampleInputEmail1"
+                                aria-describedby="emailHelp"
+                                placeholder="Enter email"
+                                style={{
+                                border: "none",
+                                borderBottom: "1px solid black"
+                            }}/>
+                            <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small>
+                        </div>
+                        <div className="form-group">
+                            <label htmlFor="exampleInputPassword1">Email</label>
+                            <input
+                                type="password"
+                                className="form-control"
+                                id="exampleInputPassword1"
+                                placeholder="Password"
+                                style={{
+                                border: "none",
+                                borderBottom: "1px solid black"
+                            }}/>
+                        </div>
+                        <div className="form-group">
+                            <label htmlFor="exampleInputPassword1">masukan</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"/>
+
+                        </div>
+                        <button type="submit" className="btn btn-primary">Submit</button>
+                    </div>
+                </form>
+            </section>
+            {/* <section>
+                <div>
+                    section Terdaftar dan diawasi
+                </div>
+            </section> */}
+            <section>
+                <div className="jumbotron-fluid footer">
+                    <div>
+                        <h5>www.belibaik.com</h5>
+                    </div>
+                    <div>
+                        <h5>Bantuan</h5>
+                        <div>
+                            <h6>tentang</h6>
+                            <h6>Faq</h6>
+                            <h6>ketentuan</h6>
+                            <h6>kontak & klaim</h6>
+                        </div>
+                    </div>
+                    <div>
+                        <h5>Artikel</h5>
+                        <div>
+                            <h6>Pembiyayan syariah
+                            </h6>
+                            <h6>Gaya Hidup</h6>
+                            <h6>perbankan Syariah</h6>
+                        </div>
+                    </div>
+                    <div>
+                        <img alt="instagram"/>
+                        <img alt="facebook"/>
+                    </div>
+                </div>
+
             </section>
         </div>
     )
