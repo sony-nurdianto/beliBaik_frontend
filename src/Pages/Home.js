@@ -130,11 +130,12 @@ const Home = () => {
                 </div>
             </section>
             <section>
-                <div className="manfaat">
+                <div className="manfaat ">
+                    <div className="container">
                     <div className="manfaat-isi">
                         <h1 data-aos="fade-down-right">manfaat pinjaman syariah beli baik</h1>
                     </div>
-                    <div className="container manfaat-card">
+                    <div className="manfaat-card">
                         <div className="content-card" data-aos="flip-left">
                             <i/>
                             <h4>aman</h4>
@@ -162,6 +163,7 @@ const Home = () => {
                                 persis seperti bentuk aslinya, diikuti oleh versi bahasa Inggris yang berasal
                                 dari terjemahan tahun 1914 oleh H. Rackham.</p>
                         </div>
+                    </div>
                     </div>
 
                 </div>
