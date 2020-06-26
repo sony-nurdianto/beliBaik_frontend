@@ -178,13 +178,13 @@ const Home = () => {
                     </div>
                     <div className="manfaat-card2" data-aos="fade-up">
                         <div className="card shadow">
-                            <img className="card-img-top" src={F1} alt="Card image cap" />
+                            <img className="card-img-top" src={F1} alt="artikel" />
                             <div className="card-body">
                                 <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             </div>
                         </div>
                         <div className="card shadow" >
-                            <img className="card-img-top" src={F2} alt="Card image cap" />
+                            <img className="card-img-top" src={F2} alt="seminar" />
                             <div className="card-body">
                                 <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             </div>
