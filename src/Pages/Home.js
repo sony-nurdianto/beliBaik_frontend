@@ -241,38 +241,43 @@ const Home = () => {
             </section>
             <section>
                 <div className="container masukan">
-                    <h1 data-aos="zoom-in-left" data-aos-anchor-placement="top-center">Masukan anda motivasi untuk kami</h1>
+                    <h1 className="masukan-title" data-aos="zoom-in-left" data-aos-anchor-placement="top-center">Masukan anda motivasi untuk kami</h1>
                     <div className="masukan-form">
-                        <div className="cardform">
+                        <div className="cardform" data-aos="fade-down-right" data-aos-anchor-placement="center-top">
                             <div className="card p-3 rounded shadow masukan-card" >
                                 <form >
+                                    <div className="jarak">
+                                        <h2 className="masukan-title" >Kontak</h2>
+                                        <hr className="masukan-line" />
+                                        <h6>silahkan kirim kritik dan saran anda</h6>
+                                    </div>
                                     <div className="form-group">
-                                        <label>Name</label>
                                         <input
                                             type="text"
                                             className="form-control"
                                             id="name"
                                             name="name"
+                                            placeholder="name"
                                         //   value={data.name}
                                         //   onChange={handleChange}
                                         />
                                     </div>
                                     <div className="form-group">
-                                        <label>Email address</label>
-                                        <input
+                                        <textarea
                                             type="email"
                                             className="form-control"
                                             id="email"
                                             name="email"
+                                            placeholder="Pesan"
                                         //   value={data.email}
                                         //   onChange={handleChange}
                                         />
                                     </div>
 
                                     <div className="form-group form-check"></div>
-                                    <button type="submit" className="btn text-light btn-block">
-                                        Make An Account
-          </button>
+                                    <button type="submit" className="btn  btn-primary">
+                                        Kirim
+                                    </button>
                                 </form>
                             </div>
                         </div>

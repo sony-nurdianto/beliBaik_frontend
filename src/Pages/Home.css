@@ -487,7 +487,23 @@
 
 .masukan-card{
     width: 40vw;
-    height: 50vh
+    height: 55vh
+}
+
+.masukan-title{
+    font-weight : 1000;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #405472;
+}
+
+.masukan-line{
+    border-top: 2px solid #ff6f00;
+    width : 25rem;
+}
+
+.masukan-line2{
+    border-top: 2px solid #ff6f00;
+    width : 20rem;
 }
 
 .footer{
@@ -500,10 +516,15 @@
     color : white
 }
 
+.jarak{
+    margin-bottom: 2rem;
+}
+
 .form-control{
     
-        border: none;
-        border-bottom: 1px solid black
+        border: none !important;
+        border-bottom: 2px solid #ff6f00 !important;
+        border-radius: 0% !important;
 }
 
 @media screen and (max-width : 600px) {
