@@ -244,26 +244,48 @@ const Home = () => {
                     <h1 style={{
                         textAlign: "center"
                     }} data-aos="zoom-in-left" data-aos-anchor-placement="top-center">Masukan anda motivasi untuk kami</h1>
-                </div>
-                <div className="masukan-form container" data-aos="zoom-in-right" data-aos-anchor-placement="top-center">
-                    <div className="form-group">
-                        <label htmlFor="exampleInputEmail1">nama</label>
-                        <input
-                            type="email"
-                            className="form-control"
-                            id="exampleInputEmail1"
-                            aria-describedby="emailHelp"
-                            placeholder="Enter email"
-                        />
-                        <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small>
-                    </div>
-                    <div className="form-group">
-                        <label htmlFor="exampleInputPassword1">masukan</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" />
+                    <div className="cardform">
+                        <div className="card p-3 rounded" style={{ width: "18rem", backgroundColor: "white" }}>
+                            <img
+                                src="..."
+                                className="mx-auto"
+                                alt="..."
+                                style={{ width: "55px" }}
+                            />
+                            <h4 className="card-title mx-auto">Register</h4>
+                            <form >
+                                <div className="form-group">
+                                    <label>Name</label>
+                                    <input
+                                        type="text"
+                                        className="form-control"
+                                        id="name"
+                                        name="name"
+                                    //   value={data.name}
+                                    //   onChange={handleChange}
+                                    />
+                                </div>
+                                <div className="form-group">
+                                    <label>Email address</label>
+                                    <input
+                                        type="email"
+                                        className="form-control"
+                                        id="email"
+                                        name="email"
+                                    //   value={data.email}
+                                    //   onChange={handleChange}
+                                    />
+                                </div>
 
+                                <div className="form-group form-check"></div>
+                                <button type="submit" className="btn text-light btn-block">
+                                    Make An Account
+          </button>
+                            </form>
+                        </div>
                     </div>
-                    <button type="submit" className="btn btn-primary">Submit</button>
                 </div>
+
             </section>
             {/* <section>
                 <div>
