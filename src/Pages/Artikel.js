@@ -14,7 +14,7 @@ import F1 from "./images/undraw_newspaper_k72w.svg"
 import F2 from "./images/undraw_business_plan_5i9d.svg"
 import Fb from "./images/facebook.svg"
 import Ig from "./images/instagram.svg"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 
 
 
