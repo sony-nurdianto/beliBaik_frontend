@@ -1,8 +1,10 @@
 import React from 'react';
 import Navbar from './components/Navbar/Navbar.js'
 import Home from './Pages/Home'
+import Artikel from './Pages/Artikel'
+import Tentang from './Pages/Tentang'
 import "animate.css"
-import {HashRouter  as Router, Switch, Route} from 'react-router-dom'
+import { HashRouter as Router, Switch, Route } from 'react-router-dom'
 // import "./style.css"
 
 // https://www.youtube.com/watch?v=FZQxPTV3cFk
@@ -10,12 +12,14 @@ import {HashRouter  as Router, Switch, Route} from 'react-router-dom'
 function App() {
   return (
     <div>
-     <Router>
-        <Navbar/>
-       <Switch>
-         <Route exact path="/"><Home/></Route>
+      <Router>
+        <Navbar />
+        <Switch>
+          <Route exact path="/"><Home /></Route>
+          <Route exact path="/artikel"><Artikel /></Route>
+          <Route exact path="/tentang"><Tentang /></Route>
         </Switch>
-     </Router>
+      </Router>
     </div>
   );
 }

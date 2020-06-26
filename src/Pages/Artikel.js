@@ -7,18 +7,18 @@ import Aos from "aos"
 import "aos/dist/aos.css"
 import "./Home.css"
 import C1 from "./images/animasi.jpg"
-import C2 from "./images/2.png"
-import B2 from "./images/1.png"
+import C2 from "./images/Bank_icon.png"
+import B2 from "./images/landing.png"
 import B from "./images/google-play-badge.svg"
 import F1 from "./images/undraw_newspaper_k72w.svg"
 import F2 from "./images/undraw_business_plan_5i9d.svg"
 import Fb from "./images/facebook.svg"
 import Ig from "./images/instagram.svg"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
 
-
-const Home = () => {
+const Artikel = () => {
 
     const swiper = useRef(null)
     useEffect(() => {
@@ -330,4 +330,4 @@ const Home = () => {
 
 }
 
-export default Home
+export default Artikel
