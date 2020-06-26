@@ -1,5 +1,5 @@
-import React, {useEffect, useRef} from "react"
-import {Link} from "react-router-dom"
+import React, { useEffect, useRef } from "react"
+import { Link } from "react-router-dom"
 import Swiper from 'swiper';
 import 'swiper/css/swiper.min.css'
 import 'swiper/js/swiper.min.js'
@@ -10,6 +10,8 @@ import C1 from "./images/animasi.jpg"
 import C2 from "./images/Bank_icon.png"
 import B2 from "./images/landing.png"
 import B from "./images/google-play-badge.svg"
+import F1 from "./images/undraw_newspaper_k72w.svg"
+import F2 from "./images/undraw_business_plan_5i9d.svg"
 
 const Home = () => {
 
@@ -48,7 +50,7 @@ const Home = () => {
     }, [])
 
     useEffect(() => {
-        Aos.init({duration: 500, disable: false})
+        Aos.init({ duration: 500, disable: false })
 
     }, [])
 
@@ -58,7 +60,7 @@ const Home = () => {
                 <div className="landing ">
 
                     <div className="div-img">
-                        <img src={B2} alt="animasi background" className="img-first"/>
+                        <img src={B2} alt="animasi background" className="img-first" />
                     </div>
                     <div className="centering">
                         <div className="title">
@@ -80,14 +82,14 @@ const Home = () => {
                         <div
                             className="container"
                             style={{
-                            margin: "0"
-                        }}>
+                                margin: "0"
+                            }}>
                             <span className="center">
                                 <Link to="/"><img
                                     className="google-btn"
                                     src={B}
                                     alt="google"
-                                    /></Link>
+                                /></Link>
                             </span>
                         </div>
                     </div>
@@ -103,7 +105,7 @@ const Home = () => {
                         src={C1}
                         alt="sembarang"
                         data-aos="fade-left"
-                        data-aos-anchor-placement="top-center"/> {/* </div> */}
+                        data-aos-anchor-placement="top-center" /> {/* </div> */}
                     <span className="container align-self-center">
                         <h5
                             className="sub-headline "
@@ -113,13 +115,13 @@ const Home = () => {
                         </h5>
 
                         <p className="p2" data-aos="fade-down-right">Pembiyayan syariah adalah
-                            penyediaan uang atau tagihan yang dipersamakan dengan itu berdasarkan
+                        penyediaan uang atau tagihan yang dipersamakan dengan itu berdasarkan
                             persetujuan atau kesepakatan antara bank dengan pihak yang dibiyayai</p>
                         <div
                             className="container"
                             style={{
-                            padding: "0"
-                        }}>
+                                padding: "0"
+                            }}>
                             <div className="center">
                                 <Link to="/" className="btn btn-info" data-aos="fade-down-right">Selengkapnya</Link>
                             </div>
@@ -132,81 +134,102 @@ const Home = () => {
             <section>
                 <div className="manfaat ">
                     <div className="container">
-                    <div className="manfaat-isi">
-                        <h1 data-aos="fade-down-right">manfaat pinjaman syariah beli baik</h1>
-                    </div>
-                    <div className="manfaat-card">
-                        <div className="content-card" data-aos="flip-left">
-                            <i/>
-                            <h4>aman</h4>
-                            <p>Bagian standar dari teks Lorem Ipsum yang digunakan sejak tahun 1500an kini
+                        <div className="manfaat-isi">
+                            <h1 data-aos="fade-down-right" data-aos-anchor-placement="top-center">manfaat pinjaman syariah beli baik</h1>
+                        </div>
+                        <div className="manfaat-card2">
+                            <div className="content-card" data-aos="flip-left">
+                                <i />
+                                <h4>aman</h4>
+                                <p>Bagian standar dari teks Lorem Ipsum yang digunakan sejak tahun 1500an kini
                                 di reproduksi kembali di bawah ini untuk mereka yang tertarik. Bagian 1.10.32
                                 dan 1.10.33 dari "de Finibus Bonorum et Malorum" karya Cicero juga di reproduksi
                                 persis seperti bentuk aslinya, diikuti oleh versi bahasa Inggris yang berasal
                                 dari terjemahan tahun 1914 oleh H. Rackham.</p>
-                        </div>
-                        <div className="content-card" data-aos="flip-right">
-                            <i/>
-                            <h4>terjangkau</h4>
-                            <p>Bagian standar dari teks Lorem Ipsum yang digunakan sejak tahun 1500an kini
+                            </div>
+                            <div className="content-card" data-aos="flip-right">
+                                <i />
+                                <h4>terjangkau</h4>
+                                <p>Bagian standar dari teks Lorem Ipsum yang digunakan sejak tahun 1500an kini
                                 di reproduksi kembali di bawah ini untuk mereka yang tertarik. Bagian 1.10.32
                                 dan 1.10.33 dari "de Finibus Bonorum et Malorum" karya Cicero juga di reproduksi
                                 persis seperti bentuk aslinya, diikuti oleh versi bahasa Inggris yang berasal
                                 dari terjemahan tahun 1914 oleh H. Rackham.</p>
-                        </div>
-                        <div className="content-card" data-aos="flip-up">
-                            <i/>
-                            <h4>terpercaya</h4>
-                            <p>Bagian standar dari teks Lorem Ipsum yang digunakan sejak tahun 1500an kini
+                            </div>
+                            <div className="content-card" data-aos="flip-up">
+                                <i />
+                                <h4>terpercaya</h4>
+                                <p>Bagian standar dari teks Lorem Ipsum yang digunakan sejak tahun 1500an kini
                                 di reproduksi kembali di bawah ini untuk mereka yang tertarik. Bagian 1.10.32
                                 dan 1.10.33 dari "de Finibus Bonorum et Malorum" karya Cicero juga di reproduksi
                                 persis seperti bentuk aslinya, diikuti oleh versi bahasa Inggris yang berasal
                                 dari terjemahan tahun 1914 oleh H. Rackham.</p>
+                            </div>
                         </div>
-                    </div>
                     </div>
 
                 </div>
 
             </section>
+            <section>
+                <div className="manfaat">
+                    <div className="manfaat-isi">
+                        <h1 data-aos="fade-down" data-aos-anchor-placement="top-center">Fitur Beli Baik </h1>
+                    </div>
+                    <div className="manfaat-card2" data-aos="fade-up">
+                        <div className="card shadow">
+                            <img className="card-img-top" src={F1} alt="Card image cap" />
+                            <div className="card-body">
+                                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                        <div className="card shadow" >
+                            <img className="card-img-top" src={F2} alt="Card image cap" />
+                            <div className="card-body">
+                                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <section >
                 <span >
-                    <h1 className="fitur-name " data-aos="fade-down">Bank Pilihan</h1>
+                    <h1 className="fitur-name " data-aos="fade-down" data-aos-anchor-placement="top-center">Bank Pilihan</h1>
                 </span>
 
                 <div
                     className="swiper-container"
                     data-aos="zoom-in"
-                    data-aos-anchor-placement="top">
+                    data-aos-anchor-placement="top-center">
 
                     <div className="swiper-wrapper">
 
                         <div className="card shadow swiper-slide">
-                            <img className="card-img-top" src={C2} alt="bank"/>
+                            <img className="card-img-top" src={C2} alt="bank" />
                             <div className="card-body">
                                 <p className="card-text">BCA</p>
                             </div>
                         </div>
                         <div className="card shadow swiper-slide">
-                            <img className="card-img-top" src={C2} alt="bank"/>
+                            <img className="card-img-top" src={C2} alt="bank" />
                             <div className="card-body">
                                 <p className="card-text">Bni</p>
                             </div>
                         </div>
                         <div className="card shadow swiper-slide">
-                            <img className="card-img-top" src={C2} alt="bank"/>
+                            <img className="card-img-top" src={C2} alt="bank" />
                             <div className="card-body">
                                 <p className="card-text">Mandiri</p>
                             </div>
                         </div>
                         <div className="card shadow swiper-slide">
-                            <img className="card-img-top" src={C2} alt="bank"/>
+                            <img className="card-img-top" src={C2} alt="bank" />
                             <div className="card-body">
                                 <p className="card-text">Mandiri</p>
                             </div>
                         </div>
                         <div className="card shadow swiper-slide">
-                            <img className="card-img-top" src={C2} alt="bank"/>
+                            <img className="card-img-top" src={C2} alt="bank" />
                             <div className="card-body">
                                 <p className="card-text">Mandiri</p>
                             </div>
@@ -222,37 +245,25 @@ const Home = () => {
                         textAlign: "center"
                     }} data-aos="zoom-in-left" data-aos-anchor-placement="top-center">Masukan anda motivasi untuk kami</h1>
                 </div>
-                <form className="masukan-form" data-aos="zoom-in-right"data-aos-anchor-placement="top-center">
-                    <div className="container">
-                        <div className="form-group">
-                            <label htmlFor="exampleInputEmail1">nama</label>
-                            <input
-                                type="email"
-                                className="form-control"
-                                id="exampleInputEmail1"
-                                aria-describedby="emailHelp"
-                                placeholder="Enter email"
-                             />
-                            <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small>
-                        </div>
-                        <div className="form-group">
-                            <label htmlFor="exampleInputPassword1">Email</label>
-                            <input
-                                type="password"
-                                className="form-control"
-                                id="exampleInputPassword1"
-                                placeholder="Password"
-                                
-                            />
-                        </div>
-                        <div className="form-group">
-                            <label htmlFor="exampleInputPassword1">masukan</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"/>
-
-                        </div>
-                        <button type="submit" className="btn btn-primary">Submit</button>
+                <div className="masukan-form container" data-aos="zoom-in-right" data-aos-anchor-placement="top-center">
+                    <div className="form-group">
+                        <label htmlFor="exampleInputEmail1">nama</label>
+                        <input
+                            type="email"
+                            className="form-control"
+                            id="exampleInputEmail1"
+                            aria-describedby="emailHelp"
+                            placeholder="Enter email"
+                        />
+                        <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small>
                     </div>
-                </form>
+                    <div className="form-group">
+                        <label htmlFor="exampleInputPassword1">masukan</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" />
+
+                    </div>
+                    <button type="submit" className="btn btn-primary">Submit</button>
+                </div>
             </section>
             {/* <section>
                 <div>
@@ -283,8 +294,8 @@ const Home = () => {
                         </div>
                     </div>
                     <div>
-                        <img alt="instagram"/>
-                        <img alt="facebook"/>
+                        <img alt="instagram" />
+                        <img alt="facebook" />
                     </div>
                 </div>
 
