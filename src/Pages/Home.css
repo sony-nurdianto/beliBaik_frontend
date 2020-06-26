@@ -473,10 +473,21 @@
 
 .masukan{
     margin-top : 5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
 }
 
 .masukan-form{
     margin-bottom: 7rem;
+    margin-top: 3rem;
+}
+
+.masukan-card{
+    width: 40vw;
+    height: 50vh
 }
 
 .footer{

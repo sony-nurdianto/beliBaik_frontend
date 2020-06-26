@@ -241,47 +241,40 @@ const Home = () => {
             </section>
             <section>
                 <div className="container masukan">
-                    <h1 style={{
-                        textAlign: "center"
-                    }} data-aos="zoom-in-left" data-aos-anchor-placement="top-center">Masukan anda motivasi untuk kami</h1>
-                    <div className="cardform">
-                        <div className="card p-3 rounded" style={{ width: "18rem", backgroundColor: "white" }}>
-                            <img
-                                src="..."
-                                className="mx-auto"
-                                alt="..."
-                                style={{ width: "55px" }}
-                            />
-                            <h4 className="card-title mx-auto">Register</h4>
-                            <form >
-                                <div className="form-group">
-                                    <label>Name</label>
-                                    <input
-                                        type="text"
-                                        className="form-control"
-                                        id="name"
-                                        name="name"
-                                    //   value={data.name}
-                                    //   onChange={handleChange}
-                                    />
-                                </div>
-                                <div className="form-group">
-                                    <label>Email address</label>
-                                    <input
-                                        type="email"
-                                        className="form-control"
-                                        id="email"
-                                        name="email"
-                                    //   value={data.email}
-                                    //   onChange={handleChange}
-                                    />
-                                </div>
+                    <h1 data-aos="zoom-in-left" data-aos-anchor-placement="top-center">Masukan anda motivasi untuk kami</h1>
+                    <div className="masukan-form">
+                        <div className="cardform">
+                            <div className="card p-3 rounded shadow masukan-card" >
+                                <form >
+                                    <div className="form-group">
+                                        <label>Name</label>
+                                        <input
+                                            type="text"
+                                            className="form-control"
+                                            id="name"
+                                            name="name"
+                                        //   value={data.name}
+                                        //   onChange={handleChange}
+                                        />
+                                    </div>
+                                    <div className="form-group">
+                                        <label>Email address</label>
+                                        <input
+                                            type="email"
+                                            className="form-control"
+                                            id="email"
+                                            name="email"
+                                        //   value={data.email}
+                                        //   onChange={handleChange}
+                                        />
+                                    </div>
 
-                                <div className="form-group form-check"></div>
-                                <button type="submit" className="btn text-light btn-block">
-                                    Make An Account
+                                    <div className="form-group form-check"></div>
+                                    <button type="submit" className="btn text-light btn-block">
+                                        Make An Account
           </button>
-                            </form>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -322,7 +315,7 @@ const Home = () => {
                 </div>
 
             </section>
-        </div>
+        </div >
     )
 
 }
