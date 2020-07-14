@@ -1,0 +1,30 @@
+.footer{
+    background-color:#235952;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 30vh;
+    color : white
+}
+
+.jarak{
+    margin-bottom: 2rem;
+}
+
+.form-control{
+    
+        border: none !important;
+        border-bottom: 2px solid #ff6f00 !important;
+        border-radius: 0% !important;
+}
+
+.img-footer{
+    display : flex;
+    justify-content: space-evenly;
+    width : 25%
+}
+
+.img-footer img{
+    width : 15%
+}

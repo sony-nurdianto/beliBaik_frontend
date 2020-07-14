@@ -1,0 +1,23 @@
+@import url( 'https://fonts.googleapis.com/css2?family=Cabin:ital,wght@1,500&family=Herr+Von+Muellerhoff&family=Source+Sans+Pro&display=swap');
+@import url( 'https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@700&display=swap');
+
+.fitur-name {
+    color: #405472;
+    font-size: 5rem;
+    font-weight: 1000;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+    margin-top: 12rem;
+    margin-bottom: 5rem;
+}
+
+/* .swiper-container {
+    width: 80% !important;
+    height: 50% !important;
+    margin-bottom: 10rem;
+    
+} */
+
+.card {
+    width : 18rem;
+}

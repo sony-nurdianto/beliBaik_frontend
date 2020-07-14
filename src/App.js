@@ -1,8 +1,7 @@
 import React from 'react';
 import Navbar from './components/Navbar/Navbar.js'
 import Home from './Pages/Home'
-import Artikel from './Pages/Artikel'
-import Tentang from './Pages/Tentang'
+
 import "animate.css"
 import { HashRouter as Router, Switch, Route } from 'react-router-dom'
 // import "./style.css"
@@ -16,8 +15,7 @@ function App() {
         <Navbar />
         <Switch>
           <Route exact path="/"><Home /></Route>
-          <Route exact path="/artikel"><Artikel /></Route>
-          <Route exact path="/tentang"><Tentang /></Route>
+
         </Switch>
       </Router>
     </div>

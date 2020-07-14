@@ -1,0 +1,80 @@
+@import url( 'https://fonts.googleapis.com/css2?family=Cabin:ital,wght@1,500&family=Herr+Von+Muellerhoff&family=Source+Sans+Pro&display=swap');
+
+.Video{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+
+.vitem{
+    width : 500 ;
+    height: 300 ;
+}
+
+.video-title{
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+   
+}
+
+.video-headline{
+    font-size: 3.2vw;
+    font-weight: 1000;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #405472;
+    line-height: -1;
+    /* margin-right: 20px; */
+    /* margin-bottom: 50px; */
+    text-align: center;
+
+}
+
+.video-section{
+    margin-top: 6rem;
+}
+
+.v-item{
+    margin-bottom: 5rem;
+   
+}
+
+@media (min-width : 600px){
+    .player-wrapper{
+        width: 50%;
+    }
+}
+
+@media (max-width : 600px){
+    .video-headline{
+        font-size: 2.5rem;
+        font-weight: 1000;
+        font-family: 'Source Sans Pro', sans-serif;
+        color: #405472;
+        line-height: -1;
+        /* margin-right: 20px; */
+        /* margin-bottom: 50px; */
+        text-align: center;
+    
+    }
+
+    .video-section{
+        margin-top: 3rem;
+    }
+    
+    .v-item{
+        margin-bottom: 2rem;
+       
+    }
+    .video-title{
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+       
+    }
+}

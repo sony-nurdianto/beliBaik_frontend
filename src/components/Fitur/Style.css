@@ -1,0 +1,79 @@
+@import url( 'https://fonts.googleapis.com/css2?family=Cabin:ital,wght@1,500&family=Herr+Von+Muellerhoff&family=Source+Sans+Pro&display=swap');
+@import url( 'https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@700&display=swap');
+
+
+
+.manfaat-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.manfaat-card2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+.card {
+    width : 18rem;
+    transition: all .5s ease-in-out;
+   
+}
+
+.card:hover{
+    transform: scale(1.1);
+    
+}
+
+.manfaat {
+    margin-top: 8rem;
+}
+
+.manfaat-isi{
+    text-align: center;
+    margin-bottom: 5rem;
+    
+}
+
+.manfaat-isi h1{
+
+        font-size: 4rem;
+        font-weight: 1000;
+        font-family: 'Source Sans Pro', sans-serif;
+        color: #405472;
+    
+}
+
+@media (max-width : 600px){
+ 
+
+    .manfaat-isi h1{
+
+        font-size: 3rem;
+        font-weight: 1000;
+        font-family: 'Source Sans Pro', sans-serif;
+        color: #405472;
+    
+}
+
+    .manfaat-card{
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-around; */
+        align-items: center;
+    }
+
+ 
+
+    .card{
+        width : 18rem !important;
+        transition: all .5s ease-in-out;
+        margin-bottom: 2.3rem;
+        
+    }
+    .card-text{
+        font-size: 16px;
+    }
+}

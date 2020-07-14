@@ -1,0 +1,198 @@
+@import url( 'https://fonts.googleapis.com/css2?family=Cabin:ital,wght@1,500&family=Herr+Von+Muellerhoff&family=Source+Sans+Pro&display=swap');
+@import url( 'https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap');
+
+
+.flix {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    /* margin-left: 1rem; */
+    /* margin-right: 1rem; */
+    
+    
+}
+
+.syariah-description{
+    margin-right: 2rem;
+    margin-left: 2rem;
+
+}
+.p3{
+    text-align: center;
+}
+.img1 {
+    width: 35vw;
+    height: 50vh;
+    /* margin-right: 5rem; */
+    /* margin-left: 5rem; */
+}
+
+.p2 {
+    font-size: 15px;
+    /* margin-right: 100px; */
+    text-align: justify;
+    /* margin-left : 10px; */
+    font-family: 'Noto Sans JP', sans-serif;
+    
+
+}
+
+.p2p {
+    font-size: 15px;
+    /* margin-right: 100px; */
+    text-align: justify;
+    /* margin-left : 10px; */
+    font-family: 'Noto Sans JP', sans-serif;
+    margin-bottom: 2rem;
+    
+
+}
+
+
+.sub-headline {
+    font-size: 3.2vw;
+    font-weight: 1000;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #405472;
+    line-height: -1;
+    /* margin-right: 20px; */
+    margin-bottom: 50px;
+    text-align: center;
+    
+    
+}
+
+.line{
+    border-top: 2px solid #ff6f00;
+    width : 40rem;
+    margin : 0  !important;
+    margin-bottom: 8px !important;
+    margin-top: 10px !important;
+    
+}
+
+.line2{
+    border-top: 2px solid #ff6f00;
+    width : 35rem;
+    margin : 0 !important;
+
+}
+
+.center-line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+.syari{
+    margin-top: 3rem;
+}
+
+@media (max-width : 600px){
+
+    .flix {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        /* width: 10rem !important; */
+        
+        
+    }
+    
+    /* .syariah-description{
+        width: 100%;
+        height : 10rem
+    
+    } */
+    .p3{
+        text-align: center;
+    }
+    .img1 {
+        display: none;
+    }
+    
+    .p2 {
+     display: none;
+     font-family: 'Noto Sans JP', sans-serif;
+        
+    
+    }
+
+    .p2p {
+        font-size: 22px;
+        /* margin-right: 100px; */
+        text-align: justify;
+        /* margin-left : 10px; */
+        /* word-spacing: -2px; */
+        letter-spacing: -1.5px;
+        margin-bottom: 2rem;
+        font-weight: 500;
+        font-family: 'Noto Sans JP', sans-serif;
+    
+    }
+    
+    .sub-headline {
+        font-size: 2rem;
+        font-weight: 1000;
+        font-family: 'Source Sans Pro', sans-serif;
+        color: #405472;
+        line-height: -1;
+        /* margin-right: 20px; */
+        margin-bottom: 50px;
+        text-align: center;
+        
+        
+    }
+
+    .syariah-description{
+        margin : 0
+    
+    }
+    
+    .line{
+        border-top: 3px solid #ff6f00;
+        border-radius: 10%;
+        width : 15rem;
+        margin : 0  !important;
+        margin-bottom: 8px !important;
+        margin-top: 10px !important;
+        
+    }
+    
+    .line2{
+        border-top: 3px solid #ff6f00;
+        border-radius: 10%;
+        width : 10rem;
+        margin : 0 !important;
+    
+    }
+    
+    .center-line{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .syariah-centerP{
+        font-size: 25px;
+        /* margin-bottom: 13rem; */
+        /* height: 30rem; */
+    }
+    
+    .syari{
+        margin-top: 3.5rem;
+        width: 100%;
+    }
+    
+    .syariahP{
+        margin :20px
+    }
+
+}

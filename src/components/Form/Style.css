@@ -1,0 +1,54 @@
+@import url( 'https://fonts.googleapis.com/css2?family=Cabin:ital,wght@1,500&family=Herr+Von+Muellerhoff&family=Source+Sans+Pro&display=swap');
+@import url( 'https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@700&display=swap');
+
+
+
+
+.masukan{
+    margin-top : 5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width :100%;
+    height : auto
+}
+
+.masukan-form{
+    margin-bottom: 7rem;
+    margin-top: 3rem;
+}
+
+.masukan-card{
+    width: 40vw;
+    height: 55vh
+}
+
+.masukan-title{
+    font-weight : 1000;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #405472;
+}
+
+.masukan-line{
+    border-top: 2px solid #ff6f00;
+    width : 25rem;
+}
+
+.masukan-line2{
+    border-top: 2px solid #ff6f00;
+    width : 20rem;
+}
+
+
+.jarak{
+    margin-bottom: 2rem;
+}
+
+.form-control{
+    
+        border: none !important;
+        border-bottom: 2px solid #ff6f00 !important;
+        border-radius: 0% !important;
+}
