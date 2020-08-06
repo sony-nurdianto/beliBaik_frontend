@@ -1,8 +1,6 @@
 import React, { useEffect } from "react"
 import { Link } from "react-router-dom"
 import "./Artikel.css"
-import { Swiper, Pagination, EffectFlip } from '../../../node_modules/swiper/swiper.esm';
-import ReactIdSwiperCustom from 'react-id-swiper/lib/ReactIdSwiper.custom';
 import Art1 from "../../images/artike_ syariah_.jpg"
 import Art2 from "../../images/animasiOrang.jpeg"
 import Art3 from "../../images/keuangan-syariah-ilustrasi-_130118131611-135.jpg"
@@ -24,20 +22,9 @@ const Artikel = () => {
 
     }, [])
 
-    const params = {
-
-        Swiper,
-
-        modules: [Pagination, EffectFlip],
-
-        pagination: {
-            el: '.swiper-pagination',
-            type: 'bullets',
-            clickable: true
-        },
 
 
-    }
+
 
     return (
         <section>
