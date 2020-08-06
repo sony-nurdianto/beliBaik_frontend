@@ -1,0 +1,40 @@
+.artikel1{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+
+.artikel1-title h1{
+    color:#ff6f00;
+    font-weight: 800
+}
+
+.artikel1-img img{
+    width: 100%;
+    height: 35rem
+}
+
+.artikel1-subtitle h3{
+    font-weight: 1000;
+}
+
+.artikel1-isi p{
+    font-size: 1.5rem
+}
+
+.artikel1-isi1 p{
+    text-align: justify;
+    font-size: 1.5rem
+}
+
+.jakarta{
+    font-weight: 1000;
+}
+
+.justify{
+    text-align: justify;
+}
+
+.ud{
+    text-decoration: underline;
+}

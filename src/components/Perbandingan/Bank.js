@@ -1,47 +1,29 @@
-import React, { useEffect } from "react"
-// import Swiper from 'swiper';
-// import 'swiper/css/swiper.min.css'
-// import 'swiper/js/swiper.min.js'
+import React, { useEffect, useRef } from "react"
 import Aos from "aos"
 import "aos/dist/aos.css"
 import "./Style.css"
 import C2 from "../../images/2.png"
+import { Swiper, Pagination, } from '../../../node_modules/swiper/swiper.esm';
+import ReactIdSwiperCustom from 'react-id-swiper/lib/ReactIdSwiper.custom';
 
 const Bank = () => {
-    // const swiper = useRef(null)
-    // useEffect(() => {
-    // swiper.current = new Swiper(".swiper-container", {
-    // effect: 'coverflow', slidesPerView: 1,
-    // loop: true,
-    // loopFillGroupWithBlank: true,
-    // grabCursor: true,
-    // centeredSlides: true,
-    // slidesPerView: 'auto',
-    //   coverflowEffect: {     rotate: 50,     stretch: 10,     depth: 100,
-    // modifier: 1,     slideShadows: false,   }, direction : "vertical",
-    // spaceBetween: 10,
-    // init: false,
-    //         pagination: {
-    //             el: '.swiper-pagination',
-    //             clickable: true
-    //         },
-    //         breakpoints: {
-    //             640: {
-    //                 slidesPerView: 2,
-    //                 spaceBetween: 20
-    //             },
-    //             768: {
-    //                 slidesPerView: 4,
-    //                 spaceBetween: 40
-    //             },
-    //             1024: {
-    //                 slidesPerView: 5,
-    //                 spaceBetween: 50
-    //             }
-    //         }
-    //     })
-    // }, [])
+    const params = {
 
+        Swiper,
+
+        modules: [Pagination],
+
+
+        grabCursor: true,
+        centeredSlides: true,
+        spaceBetween: 70,
+        slidesPerView: "auto",
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+
+        }
+    }
     useEffect(() => {
         Aos.init({ duration: 500, disable: false })
 
@@ -54,11 +36,11 @@ const Bank = () => {
             </span>
 
             <div
-                className="swiper-container"
+                className="container container-bank"
                 data-aos="zoom-in"
                 data-aos-anchor-placement="top-center">
 
-                <div className="swiper-wrapper">
+                <ReactIdSwiperCustom {...params} >
 
                     <div className="card shadow swiper-slide">
                         <img className="card-img-top" src={C2} alt="bank" />
@@ -90,7 +72,7 @@ const Bank = () => {
                             <p className="card-text">Mandiri</p>
                         </div>
                     </div>
-                </div>
+                </ReactIdSwiperCustom>
                 <br />
                 <br />
                 <div className="swiper-pagination"></div>

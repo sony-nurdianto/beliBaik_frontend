@@ -1,4 +1,139 @@
 .artikel-item{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.artikel-title{
+    text-align : center;
+}
+
+.card-size1{
+  
+    width : 35rem !important;
+    height : 33rem;
+    border-radius: 0% !important;
+    border : none !important;
+    transition: all .2s ease-in-out;
+
+}
+
+.card-size1:hover{
+    transform: scale(1.1);
+}
+
+.card-size{
+    width : 38rem !important;
+    height : 16rem;
+    margin-left: 2rem;
+    border-radius: 0% !important;
+    border : none !important;
+    transition: all .2s ease-in-out;
+    
+}
+
+.card-size:hover{
+    transform: scale(1.1);
+}
+
+.card-img{
+    width : 100%;
+    height : 100%
+}
+
+.card-img-overlay{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+    
+}
+
+.card-img-overlay:hover{
+    opacity: 1;
+}
+
+.artikel-sub-title{
+    margin-left: 4.5rem;
+}
+
+.artikel-sub-title h4{
+    color: #ff6f00;
+    font-weight:800;
+}
+
+.artikel-sub-title h5{
+    color: #29AB87;
+    font-weight:800;
+
+}
+
+
+
+.m-keungan{
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    
+}
+
+.size-card-m{
+    width:22rem;
+    height: 23rem;
+    transition: all .2s ease-in-out;
+}
+
+.size-card-m:hover{
+    transform: scale(1.1);
+}
+
+.size-card-mp{
+    width:30rem !important;
+    height: 28rem;
+    transition: all .2s ease-in-out;
+}
+
+.size-card-mp:hover{
+    transform: scale(1.1);
+}
+
+.text-pst h4{
+    color: #ff6f00;
+    font-weight: 800;
+}
+
+.text-pst h5{
+    color: #ff6f00;
+    font-weight: 800;
+}
+
+.text-pst h3{
+    color: #ff6f00;
+    font-weight: 800;
+}
+
+.text-pst h1{
+    color: #ff6f00;
+    font-weight: 800;
+}
+
+.link-artikel{
+    text-decoration: none !important;
+}
+
+.link-small{
+    text-decoration: none !important;
+    color: black
+}
+
+
+/* .artikel-item{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -66,4 +201,4 @@
         justify-content: center;
         align-items: center;
     }
-}
+} */
