@@ -31,14 +31,14 @@ const navbar = () => {
           <HashLink className="nav-link" to="/#tentang">
             <strong>Tentang</strong>
           </HashLink>
-          <HashLink className="nav-link" to="/#bank">
-            <strong>Fitur & Bank Pilihan</strong>
-          </HashLink>
           {/* <Link className="nav-link" to="/artikel">
             <strong>Testimoni</strong>
           </Link> */}
           <HashLink className="nav-link" to="/#artikel">
-            <strong>Artikel</strong>
+            <strong>Fitur</strong>
+          </HashLink>
+          <HashLink className="nav-link" to="/#bank">
+            <strong>Perbandingan</strong>
           </HashLink>
           <HashLink className="nav-link" to="/#kontak">
             <strong>Kontak</strong>

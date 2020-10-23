@@ -3,6 +3,7 @@ import Aos from "aos"
 import "aos/dist/aos.css"
 import "./Style.css"
 import C2 from "../../images/2.png"
+import {ReactComponent as StarIcon} from "../../images/star144.svg";
 import { Swiper, Pagination, } from '../../../node_modules/swiper/swiper.esm';
 import ReactIdSwiperCustom from 'react-id-swiper/lib/ReactIdSwiper.custom';
 
@@ -46,30 +47,75 @@ const Bank = () => {
                         <img className="card-img-top" src={C2} alt="bank" />
                         <div className="card-body">
                             <p className="card-text">BCA</p>
+                            <div style={{
+                                textAlign: "center"
+                            }}>
+                                <StarIcon/>
+                                <StarIcon/>
+                                <StarIcon/>
+                                <StarIcon/>
+                                <StarIcon/>
+                            </div>
                         </div>
                     </div>
                     <div className="card shadow swiper-slide">
                         <img className="card-img-top" src={C2} alt="bank" />
                         <div className="card-body">
                             <p className="card-text">Bni</p>
+                            <div style={{
+                                textAlign: "center"
+                            }}>
+                                <StarIcon/>
+                                <StarIcon/>
+                                <StarIcon/>
+                                <StarIcon/>
+                                <StarIcon/>
+                            </div>
                         </div>
                     </div>
                     <div className="card shadow swiper-slide">
                         <img className="card-img-top" src={C2} alt="bank" />
                         <div className="card-body">
                             <p className="card-text">Mandiri</p>
+                            <div style={{
+                                textAlign: "center"
+                            }}>
+                                <StarIcon/>
+                                <StarIcon/>
+                                <StarIcon/>
+                                <StarIcon/>
+                                <StarIcon/>
+                            </div>
                         </div>
                     </div>
                     <div className="card shadow swiper-slide">
                         <img className="card-img-top" src={C2} alt="bank" />
                         <div className="card-body">
                             <p className="card-text">Mandiri</p>
+                            <div style={{
+                                textAlign: "center"
+                            }}>
+                                <StarIcon/>
+                                <StarIcon/>
+                                <StarIcon/>
+                                <StarIcon/>
+                                <StarIcon/>
+                            </div>
                         </div>
                     </div>
                     <div className="card shadow swiper-slide">
                         <img className="card-img-top" src={C2} alt="bank" />
                         <div className="card-body">
                             <p className="card-text">Mandiri</p>
+                            <div style={{
+                                textAlign: "center"
+                            }}>
+                                <StarIcon/>
+                                <StarIcon/>
+                                <StarIcon/>
+                                <StarIcon/>
+                                <StarIcon/>
+                            </div>
                         </div>
                     </div>
                 </ReactIdSwiperCustom>
