@@ -11,7 +11,7 @@
     "@testing-library/user-event": "^7.2.1",
     "animate.css": "^4.1.0",
     "aos": "^2.3.4",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "bootstrap": "^4.5.0",
     "dotenv": "^8.2.0",
     "npm-upgrade": "^2.0.3",
